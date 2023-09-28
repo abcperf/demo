@@ -1,0 +1,20 @@
+[package]
+name = "abcperf-minbft"
+version = "0.10.0"
+edition = "2021"
+license = "MIT"
+description = "Integration of MinBFT into ABCperf"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+shared-ids = { path = "../../shared-ids", version = "0.10.0" }
+abcperf = { path = "../../abcperf/abcperf", version = "0.10.0" }
+abcperf-client-proxy = { path = "../../abcperf/abcperf-client-proxy", version = "0.10.0" }
+minbft = { path = "../../minbft", version = "0.10.0" }
+usig = { path = "../../usig", version = "0.10.0" }
+serde = { version = "1.0" }
+tokio = { version = "1.15.0", features = ["full"] }
+tracing = "0.1.10"
+anyhow = "1.0"
+futures = "0.3.19"

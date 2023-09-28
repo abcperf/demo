@@ -1,0 +1,28 @@
+[package]
+name = "abcperf-demo"
+version = "0.10.0"
+edition = "2021"
+license = "MIT"
+description = "Demo ABCperf binary using MinBFT"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+abcperf = { path = "../../abcperf/abcperf", version = "0.10.0" }
+abcperf-minbft = { path = "../abcperf-minbft", version = "0.10.0" }
+abcperf-noop = { path = "../../abcperf/abcperf-noop", version = "0.10.0" }
+usig = { path = "../../usig", version = "0.10.0" }
+abcperf-generic-client = { path = "../../abcperf/abcperf-generic-client", version = "0.10.0" }
+anyhow = "1.0"
+tracing = { version = "0.1.10", features = [
+    "max_level_debug",
+    "release_max_level_info",
+] }
+log = { version = "0.4.14", features = [
+    "max_level_debug",
+    "release_max_level_info",
+] }
+
+[build-dependencies]
+vergen = { version = "8.0.0", features = ["git", "gitcl"] }
