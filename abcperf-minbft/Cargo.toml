@@ -4,6 +4,7 @@ version = "0.10.0"
 edition = "2021"
 license = "MIT"
 description = "Integration of MinBFT into ABCperf"
+repository = "https://github.com/abcperf/demo"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
